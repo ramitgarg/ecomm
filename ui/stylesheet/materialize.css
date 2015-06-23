@@ -8011,16 +8011,38 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 #grid-selector {
-  position: absolute;
-  left: 260px;
-  right: 0;
-  padding-top: 27px;
-  padding-left: 15px; }
+  margin-top: 31px; }
+  #grid-selector span.dress-price {
+    float: right;
+    color: blue; }
+  #grid-selector div.card-content p:first-child {
+    font-weight: bold; }
+  #grid-selector span.dress-type {
+    color: #a89494; }
+  #grid-selector .card {
+    cursor: pointer; }
+  #grid-selector .card-content {
+    padding-top: 5px;
+    padding-bottom: 10px; }
+  #grid-selector div.card-content.colors li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    padding-top: 10px; }
+  #grid-selector .card-container {
+    position: absolute;
+    top: 85%;
+    background: white;
+    left: 0;
+    right: 0;
+    -webkit-transition: all 450ms ease-in-out;
+    -mozkit-transition: all 450ms ease-in-out;
+    transition: all 450ms ease-in-out; }
+  #grid-selector .card-container.open {
+    top: 52%; }
 
 #sidebar {
-  position: absolute;
-  left: 10px;
-  width: 250px;
+  min-width: 250px;
   border-right: 1px solid #e8e6e6; }
   #sidebar h3 {
     color: #262626;
@@ -8032,41 +8054,42 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   #sidebar .sizes ul {
     margin-right: 50px;
     display: inline-block; }
-  #sidebar .colors ul {
-    margin-right: 50px;
-    display: inline-block; }
-  #sidebar .colors a div {
-    border: none;
-    position: relative;
-    border-radius: 100%;
-    width: 13px;
-    height: 13px;
-    margin-left: 0;
-    margin-right: 10px;
-    display: inline-block; }
-  #sidebar .colors a div:hover {
-    width: 15px;
-    height: 15px; }
-  #sidebar .colors a .beige {
-    background-color: #eae3d3; }
-  #sidebar .colors a .black {
-    background: #222; }
-  #sidebar .colors a .blue {
-    background: #6e8cd5; }
-  #sidebar .colors a .brown {
-    background: #f56060; }
-  #sidebar .colors a .green {
-    background: #44c28d; }
-  #sidebar .colors a .grey {
-    background: #999; }
-  #sidebar .colors a .orange {
-    background: #f79858; }
-  #sidebar .colors a .purple {
-    background: #b27ef8; }
-  #sidebar .colors a .red {
-    background: #f56060; }
-  #sidebar .colors a .white {
-    background: #fff;
-    border: 1px solid #e8e9eb;
-    width: 13px;
-    height: 13px; }
+
+.colors ul {
+  margin-right: 50px;
+  display: inline-block; }
+.colors a div {
+  border: none;
+  position: relative;
+  border-radius: 100%;
+  width: 13px;
+  height: 13px;
+  margin-left: 0;
+  margin-right: 10px;
+  display: inline-block; }
+.colors a div:hover {
+  width: 15px;
+  height: 15px; }
+.colors a .beige {
+  background-color: #eae3d3; }
+.colors a .black {
+  background: #222; }
+.colors a .blue {
+  background: #6e8cd5; }
+.colors a .brown {
+  background: #f56060; }
+.colors a .green {
+  background: #44c28d; }
+.colors a .grey {
+  background: #999; }
+.colors a .orange {
+  background: #f79858; }
+.colors a .purple {
+  background: #b27ef8; }
+.colors a .red {
+  background: #f56060; }
+.colors a .white {
+  background: #fff;
+  border: 1px solid #e8e9eb;
+  width: 13px;
+  height: 13px; }
