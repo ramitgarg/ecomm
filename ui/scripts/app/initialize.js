@@ -1,300 +1,306 @@
 (function() {
 	"use strict";
 
-	var application = function() {
-
-		var data = {
-			dresses: [{
-				dress: {
-					name: "FLUTED HEM DRESS",
-					type: "Summer Dress"
-				},
-				image: "1.jpg",
-				price: {
-					amount: "39",
-					currency: {
-						symbol: "$"
-					}
-				},
-				sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-				colors: [{
-					name: "Blue",
-					class_name: "blue"
-				}, {
-					name: "Brown",
-					class_name: "brown"
-				}, {
-					name: "White",
-					class_name: "white"
-				}, {
-					name: "Green",
-					class_name: "green"
-				}]
-			}, {
-				dress: {
-					name: "PLEAT PRINTED DRESS",
-					type: "Summer Dress"
-				},
-				image: "2.jpg",
-				price: {
-					amount: "39",
-					currency: {
-						symbol: "$"
-					}
-				},
-				sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-				colors: [{
-					name: "Blue",
-					class_name: "blue"
-				}, {
-					name: "Brown",
-					class_name: "brown"
-				}, {
-					name: "White",
-					class_name: "white"
-				}, {
-					name: "Green",
-					class_name: "green"
-				}]
-			}, {
-				dress: {
-					name: "FLOWY SHIRT DRESS",
-					type: "Summer Dress"
-				},
-				image: "3.jpg",
-				price: {
-					amount: "39",
-					currency: {
-						symbol: "$"
-					}
-				},
-				sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-				colors: [{
-					name: "Blue",
-					class_name: "blue"
-				}, {
-					name: "Brown",
-					class_name: "brown"
-				}, {
-					name: "White",
-					class_name: "white"
-				}, {
-					name: "Green",
-					class_name: "green"
-				}]
-			}, {
-				dress: {
-					name: "DOUBLE LAYER DRESS",
-					type: "Summer Dress"
-				},
-				image: "4.jpg",
-				price: {
-					amount: "39",
-					currency: {
-						symbol: "$"
-					}
-				},
-				sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-				colors: [{
-					name: "Blue",
-					class_name: "blue"
-				}, {
-					name: "Brown",
-					class_name: "brown"
-				}, {
-					name: "White",
-					class_name: "white"
-				}, {
-					name: "Green",
-					class_name: "green"
-				}]
-			}, {
-				dress: {
-					name: "BEAD DETAIL DRESS",
-					type: "Summer Dress"
-				},
-				image: "5.jpg",
-				price: {
-					amount: "39",
-					currency: {
-						symbol: "$"
-					}
-				},
-				sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-				colors: [{
-					name: "Blue",
-					class_name: "blue"
-				}, {
-					name: "Brown",
-					class_name: "brown"
-				}, {
-					name: "White",
-					class_name: "white"
-				}, {
-					name: "Green",
-					class_name: "green"
-				}]
-			}, {
-				dress: {
-					name: "PLEATED DETAIL DRESS",
-					type: "Summer Dress"
-				},
-				image: "6.jpg",
-				price: {
-					amount: "39",
-					currency: {
-						symbol: "$"
-					}
-				},
-				sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-				colors: [{
-					name: "Blue",
-					class_name: "blue"
-				}, {
-					name: "Brown",
-					class_name: "brown"
-				}, {
-					name: "White",
-					class_name: "white"
-				}, {
-					name: "Green",
-					class_name: "green"
-				}]
-			}, {
-				dress: {
-					name: "PRINTED DRESS",
-					type: "Summer Dress"
-				},
-				image: "7.jpg",
-				price: {
-					amount: "39",
-					currency: {
-						symbol: "$"
-					}
-				},
-				sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-				colors: [{
-					name: "Blue",
-					class_name: "blue"
-				}, {
-					name: "Brown",
-					class_name: "brown"
-				}, {
-					name: "White",
-					class_name: "white"
-				}, {
-					name: "Green",
-					class_name: "green"
-				}]
-			}, {
-				dress: {
-					name: "PRINTED DRESS",
-					type: "Summer Dress"
-				},
-				image: "8.jpg",
-				price: {
-					amount: "39",
-					currency: {
-						symbol: "$"
-					}
-				},
-				sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-				colors: [{
-					name: "Blue",
-					class_name: "blue"
-				}, {
-					name: "Brown",
-					class_name: "brown"
-				}, {
-					name: "White",
-					class_name: "white"
-				}, {
-					name: "Green",
-					class_name: "green"
-				}]
-			}],
-			sizes: [{
-				id: "xs",
-				value: "XS"
-			}, {
-				id: "s",
-				value: "S"
-			}, {
-				id: "m",
-				value: "M"
-			}, {
-				id: "l",
-				value: "L"
-			}, {
-				id: "xl",
-				value: "XL"
-			}, {
-				id: "xxl",
-				value: "XXL"
-			}],
+	var data = {
+		dresses: [{
+			dress: {
+				name: "FLUTED HEM DRESS",
+				type: "Summer Dress"
+			},
+			image: "1.jpg",
+			price: {
+				amount: "39",
+				currency: {
+					symbol: "$"
+				}
+			},
+			sizes: ["XS", "S", "M", "L", "XL", "XXL"],
 			colors: [{
-				name: "Beige",
-				class_name: "beige"
-			}, {
-				name: "Black",
-				class_name: "black"
-			}, {
 				name: "Blue",
 				class_name: "blue"
 			}, {
 				name: "Brown",
 				class_name: "brown"
 			}, {
+				name: "White",
+				class_name: "white"
+			}, {
 				name: "Green",
 				class_name: "green"
+			}]
+		}, {
+			dress: {
+				name: "PLEAT PRINTED DRESS",
+				type: "Summer Dress"
+			},
+			image: "2.jpg",
+			price: {
+				amount: "39",
+				currency: {
+					symbol: "$"
+				}
+			},
+			sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+			colors: [{
+				name: "Blue",
+				class_name: "blue"
 			}, {
-				name: "Grey",
-				class_name: "grey"
-			}, {
-				name: "Orange",
-				class_name: "orange"
-			}, {
-				name: "Purple",
-				class_name: "purple"
-			}, {
-				name: "Red",
-				class_name: "red"
+				name: "Brown",
+				class_name: "brown"
 			}, {
 				name: "White",
 				class_name: "white"
-			}],
-			categories: [{
-				id: "new_arrival",
-				value: "New Arivals"
 			}, {
-				id: "accessories",
-				value: "Accessories"
-			}, {
-				id: "bags",
-				value: "Bags"
-			}, {
-				id: "dressed",
-				value: "Dressed"
-			}, {
-				id: "jackets",
-				value: "Jackets"
-			}, {
-				id: "jewelry",
-				value: "Jewelry"
-			}, {
-				id: "shoes",
-				value: "Shoes"
-			}, {
-				id: "shirts",
-				value: "Shirts"
-			}, {
-				id: "sweaters",
-				value: "Sweaters"
-			}, {
-				id: "t_shirtsl",
-				value: "T Shirts"
+				name: "Green",
+				class_name: "green"
 			}]
-		};
+		}, {
+			dress: {
+				name: "FLOWY SHIRT DRESS",
+				type: "Summer Dress"
+			},
+			image: "3.jpg",
+			price: {
+				amount: "39",
+				currency: {
+					symbol: "$"
+				}
+			},
+			sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+			colors: [{
+				name: "Blue",
+				class_name: "blue"
+			}, {
+				name: "Brown",
+				class_name: "brown"
+			}, {
+				name: "White",
+				class_name: "white"
+			}, {
+				name: "Green",
+				class_name: "green"
+			}]
+		}, {
+			dress: {
+				name: "DOUBLE LAYER DRESS",
+				type: "Summer Dress"
+			},
+			image: "4.jpg",
+			price: {
+				amount: "39",
+				currency: {
+					symbol: "$"
+				}
+			},
+			sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+			colors: [{
+				name: "Blue",
+				class_name: "blue"
+			}, {
+				name: "Brown",
+				class_name: "brown"
+			}, {
+				name: "White",
+				class_name: "white"
+			}, {
+				name: "Green",
+				class_name: "green"
+			}]
+		}, {
+			dress: {
+				name: "BEAD DETAIL DRESS",
+				type: "Summer Dress"
+			},
+			image: "5.jpg",
+			price: {
+				amount: "39",
+				currency: {
+					symbol: "$"
+				}
+			},
+			sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+			colors: [{
+				name: "Blue",
+				class_name: "blue"
+			}, {
+				name: "Brown",
+				class_name: "brown"
+			}, {
+				name: "White",
+				class_name: "white"
+			}, {
+				name: "Green",
+				class_name: "green"
+			}]
+		}, {
+			dress: {
+				name: "PLEATED DETAIL DRESS",
+				type: "Summer Dress"
+			},
+			image: "6.jpg",
+			price: {
+				amount: "39",
+				currency: {
+					symbol: "$"
+				}
+			},
+			sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+			colors: [{
+				name: "Blue",
+				class_name: "blue"
+			}, {
+				name: "Brown",
+				class_name: "brown"
+			}, {
+				name: "White",
+				class_name: "white"
+			}, {
+				name: "Green",
+				class_name: "green"
+			}]
+		}, {
+			dress: {
+				name: "PRINTED DRESS",
+				type: "Summer Dress"
+			},
+			image: "7.jpg",
+			price: {
+				amount: "39",
+				currency: {
+					symbol: "$"
+				}
+			},
+			sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+			colors: [{
+				name: "Blue",
+				class_name: "blue"
+			}, {
+				name: "Brown",
+				class_name: "brown"
+			}, {
+				name: "White",
+				class_name: "white"
+			}, {
+				name: "Green",
+				class_name: "green"
+			}]
+		}, {
+			dress: {
+				name: "PRINTED DRESS",
+				type: "Summer Dress"
+			},
+			image: "8.jpg",
+			price: {
+				amount: "39",
+				currency: {
+					symbol: "$"
+				}
+			},
+			sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+			colors: [{
+				name: "Blue",
+				class_name: "blue"
+			}, {
+				name: "Brown",
+				class_name: "brown"
+			}, {
+				name: "White",
+				class_name: "white"
+			}, {
+				name: "Green",
+				class_name: "green"
+			}]
+		}],
+		sizes: [{
+			id: "xs",
+			value: "XS"
+		}, {
+			id: "s",
+			value: "S"
+		}, {
+			id: "m",
+			value: "M"
+		}, {
+			id: "l",
+			value: "L"
+		}, {
+			id: "xl",
+			value: "XL"
+		}, {
+			id: "xxl",
+			value: "XXL"
+		}],
+		colors: [{
+			name: "Beige",
+			class_name: "beige"
+		}, {
+			name: "Black",
+			class_name: "black"
+		}, {
+			name: "Blue",
+			class_name: "blue"
+		}, {
+			name: "Brown",
+			class_name: "brown"
+		}, {
+			name: "Green",
+			class_name: "green"
+		}, {
+			name: "Grey",
+			class_name: "grey"
+		}, {
+			name: "Orange",
+			class_name: "orange"
+		}, {
+			name: "Purple",
+			class_name: "purple"
+		}, {
+			name: "Red",
+			class_name: "red"
+		}, {
+			name: "White",
+			class_name: "white"
+		}],
+		categories: [{
+			id: "new_arrival",
+			value: "New Arivals"
+		}, {
+			id: "accessories",
+			value: "Accessories"
+		}, {
+			id: "bags",
+			value: "Bags"
+		}, {
+			id: "dressed",
+			value: "Dressed"
+		}, {
+			id: "jackets",
+			value: "Jackets"
+		}, {
+			id: "jewelry",
+			value: "Jewelry"
+		}, {
+			id: "shoes",
+			value: "Shoes"
+		}, {
+			id: "shirts",
+			value: "Shirts"
+		}, {
+			id: "sweaters",
+			value: "Sweaters"
+		}, {
+			id: "t_shirtsl",
+			value: "T Shirts"
+		}]
+	}
+
+	var application = function() {
+
+		/** 
+		 * store list of items for a card
+		 * this array will be used to print items in UI
+		 */
+		var cart_items = [];
 
 		var initSlider = function() {
 			$('.button-collapse').sideNav();
@@ -399,6 +405,10 @@
 									"<div class=\"row\">" +
 										"<div class=\"col s12\">" +
 											"<div class=\"card\" onmouseenter=\"onMouseOver({index: " + i + ", enter: true})\" onmouseleave=\"onMouseOver({index: " + i + "})\">" +
+												"<div class=\"overlay\" id=\"overlay" + i + "\">" +
+													"<div type=\"button\" class=\"add-to-cart button\" onclick=\"onAddToCartClick({index: " + i + "})\"><p>Add to Cart</p></div>" +
+													"<div type=\"button\" class=\"view-gallery button\"><p>View Gallery</p></div>" +
+												"</div>" +
 												"<div class=\"card-image\">" +
 													"<img src=\"images/" + dresses[i].image + "\">" +
 												"</div>" +
@@ -441,6 +451,32 @@
 		};
 
 		/**
+		 * function used to set items in cart
+		 * @param cart_items Array
+		 */
+		var setCartHTML = function(cart_items) {
+
+			var htmlString = "";
+			var cart = getDomElement("cart");
+			if (cart_items == null || cart_items.length === 0) {
+				htmlString = "<span class=\"empty\">No items in cart.</span>";
+			} else {
+				htmlString = "<ul class=\"collection\">";
+				for (var i = 0; i < cart_items.length; i++) {
+					htmlString += "<li class=\"collection-item avatar\">" +
+										"<img src=\"images/" + cart_items[i].image + "\" alt=\"\" class=\"circle\">" +
+										"<span class=\"title\">" + cart_items[i].dress.name + "</span>" +
+										"<p>" + cart_items[i].dress.type + "</p>" +
+									"</li>";
+				}
+
+				htmlString += "</ul>";			
+			}
+
+			cart.innerHTML = htmlString;
+		};
+
+		/**
 		 * function called when user hovers its mouse over a dress
 		 * @param args
 		 */
@@ -450,14 +486,34 @@
 				return;
 			}
 
+			var overlay = document.getElementById("overlay" + args.index);
 			var cardContainer = document.getElementById("cardContainer" + args.index);
-			if (cardContainer != null) {
-				if (args.enter === true && cardContainer.className.indexOf("open") === -1) {
+			if (cardContainer != null && overlay != null) {
+				if (args.enter === true 
+					&& cardContainer.className.indexOf("open") === -1 
+					&& overlay.className.indexOf("open") === -1) {
+					
+					overlay.className += " open";
 					cardContainer.className += " open";
 				} else {
+					overlay.className = overlay.className.replace(/(?:^|\s)open(?!\S)/g, '');
 					cardContainer.className = cardContainer.className.replace(/(?:^|\s)open(?!\S)/g, '');
 				}
 			}
+		};
+
+		/**
+		 * function to add an item to cart
+		 * @param args JSON
+		 */
+		window.onAddToCartClick = function(args) {
+
+			if (args == null || args.index == null) {
+				return;
+			}
+
+			cart_items.push(data.dresses[args.index]);
+			setCartHTML(cart_items);
 		};
 
 		return {
@@ -467,10 +523,13 @@
 				initColors(data.colors);
 				initSizes(data.sizes);
 				initDresses(data.dresses);
+
+				// print cart
+				setCartHTML(cart_items);
 			}
 		}
 	}();
-	
+
 	application.init();
 
 }());

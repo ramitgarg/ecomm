@@ -8038,8 +8038,40 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     -webkit-transition: all 450ms ease-in-out;
     -mozkit-transition: all 450ms ease-in-out;
     transition: all 450ms ease-in-out; }
+  #grid-selector .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background-color: #5ff7d2;
+    opacity: 0.7;
+    -webkit-transition: all 450ms ease-in-out;
+    -mozkit-transition: all 450ms ease-in-out;
+    transition: all 450ms ease-in-out; }
+  #grid-selector .overlay.open {
+    bottom: 48%; }
   #grid-selector .card-container.open {
-    top: 52%; }
+    top: 52%;
+    z-index: 6; }
+  #grid-selector .button {
+    position: absolute;
+    left: 0;
+    right: 0; }
+    #grid-selector .button p {
+      width: 50%;
+      text-align: center;
+      margin: auto;
+      line-height: 40px;
+      border: 1px solid #dfd1d1;
+      background-color: white;
+      color: #894c4c;
+      font-weight: bold; }
+  #grid-selector .add-to-cart {
+    bottom: 56%; }
+  #grid-selector .view-gallery {
+    bottom: 31%; }
 
 #sidebar {
   min-width: 250px;

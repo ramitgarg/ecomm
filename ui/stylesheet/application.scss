@@ -42,8 +42,52 @@
 		transition: all 450ms ease-in-out;
 	}
 
+	.overlay {
+		position: absolute;
+		top: 0;
+		bottom: 100%;
+		left: 0;
+		right: 0;
+		z-index: 5;
+		background-color: #5ff7d2;
+		opacity: 0.7;
+		-webkit-transition: all 450ms ease-in-out;
+		-mozkit-transition: all 450ms ease-in-out;
+		transition: all 450ms ease-in-out;
+	}
+
+	.overlay.open {
+		bottom: 48%;
+	}
+
 	.card-container.open {
 		top: 52%;
+		z-index: 6;
+	}
+
+	.button {
+		position: absolute;
+		left: 0;
+		right: 0;
+	
+		p {
+			width: 50%;
+			text-align: center;
+			margin: auto;
+			line-height: 40px;
+			border: 1px solid rgb(223, 209, 209);
+			background-color: white;
+			color: rgb(137, 76, 76);
+			font-weight: bold;
+		}
+	}
+
+	.add-to-cart {
+		bottom: 56%;
+	}
+
+	.view-gallery {
+		bottom: 31%;
 	}
 }
 #sidebar {
